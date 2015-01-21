@@ -1,0 +1,206 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width:100%;
+	height: 100%;
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	margin-top: 10px;
+}
+
+.navContainer {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.navContainer ul {
+	list-style: none;
+	text-align: center;
+	display: inline;
+	float: right;
+}
+
+.navContainer ul li {
+	margin: 0 10px 0 10px;
+}
+
+ul a {
+	color: white;
+	display: inline-block;
+	/*TEXT*/
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+ul a:hover {
+	color: rgba(255,255,255, 0.5);
+}
+
+.landing {
+	height: 100%;
+	width: 100%;
+	background: url("https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?fit=crop&fm=jpg&h=700&q=75&w=1050");
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	text-align: center;
+  	font-family: sans-serif;
+  	font-weight: 100;
+  	color: white;
+}
+
+.landing h1,h2,.cta {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.cta {
+	width: 60px;
+	height: 30px;
+	margin: 10px auto;
+	background: red;
+}
+
+.container {
+	height: 600px;
+}
+
+.one {
+	background: #C44741;
+}
+
+#two {
+	background: url("https://ununsplash.imgix.net/photo-1417434743061-9873e0beaed6?q=75&fm=jpg&s=64c1a89ef425b466f96c20b51a36398e");
+	height: 50%;
+	width: 100%;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	text-align: center;
+  	font-family: sans-serif;
+  	font-weight: 100;
+}
+
+.three {
+	background: #2C343B;
+}
+
+.main {
+	width: 100%;
+	position: relative;
+}
+
+.main-container {
+	position: relative;
+	z-index: 1;
+}
+
+/*SLANTED DIVS*/
+ /*== SLANTED ONE ==*/
+.main-container:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  height: 90px;
+  background: #C44741;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  z-index: -1;
+}
+
+.main-container:after {
+  content: '';
+  position: absolute;
+  top: 550px;
+  width: 100%;
+  height: 90px;
+  background: #C44741;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  z-index: -1;
+}
+
+/*== SLANTED TWO ==*/
+
+.mainContainerTwo:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -50px;
+  width: 100%;
+  height: 90px;
+  background: #2C343B;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  z-index: 0;
+}
+
+.mainContainerTwo:after {
+  content: '';
+  position: absolute;
+  top: 550px;
+  width: 100%;
+  height: 90px;
+  background: #2C343B;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  z-index: 0;
+}
+
+.mainContent {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 20px;
+	color: white;
+	position: relative;
+}
+
+.mainContent > h1{
+	font-family: sans-serif;
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+
+.mainContent > p {
+	line-height: 25pt;
+	font-family: sans-serif;
+	font-weight: 
+}
+
+section {
+	height: 50%;
+	width: 100%;
+	background-position: 50% 50%;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	text-align: center;
+  	font-family: sans-serif;
+  	font-weight: 100;
+}
