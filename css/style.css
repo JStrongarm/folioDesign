@@ -121,6 +121,7 @@ ul a:hover {
 .main {
 	width: 100%;
 	position: relative;
+  background: #C44741;
 }
 
 .main-container {
@@ -134,7 +135,7 @@ ul a:hover {
   content: '';
   position: absolute;
   left: 0;
-  top: -50px;
+  top: -40px;
   width: 100%;
   height: 90px;
   background: #C44741;
@@ -149,7 +150,7 @@ ul a:hover {
 .main-container:after {
   content: '';
   position: absolute;
-  top: 550px;
+  bottom: -45px;
   width: 100%;
   height: 90px;
   background: #C44741;
