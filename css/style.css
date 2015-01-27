@@ -53,25 +53,46 @@ ul a:hover {
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
-  	text-align: center;
-  	font-family: sans-serif;
-  	font-weight: 100;
   	color: white;
 }
 
 .landing h1,h2,.cta {
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
+	 position: relative;
+    top: 45%;
+}
+
+.landing h1{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40pt;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px rgba(0,0,05, 0.5);
+}
+.landing h2{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 25pt;
+  font-weight: 100;
+  text-shadow: 2px 2px 2px rgba(0,0,05, 0.5);
 }
 
 .cta {
 	width: 250px;
 	height: 50px;
-	margin: 20px auto;
-	background: red;
+	margin: 35px auto;
+	background: #F23C55;
   border-radius: 5px;
+  line-height: 50px;
+  font-weight: 100;
+  position: relative;
 }
+
+.cta:hover{
+  transform:scale(1.05,1.05);
+  transform-origin: 25% 25% inital;
+  transition-duration: 0.5s;
+}
+
 .container {
 	height: 600px;
 }
