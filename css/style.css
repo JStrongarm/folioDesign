@@ -66,12 +66,12 @@ ul a:hover {
 }
 
 .cta {
-	width: 60px;
-	height: 30px;
-	margin: 10px auto;
+	width: 250px;
+	height: 50px;
+	margin: 20px auto;
 	background: red;
+  border-radius: 5px;
 }
-
 .container {
 	height: 600px;
 }
@@ -190,7 +190,7 @@ ul a:hover {
 .mainContent > p {
 	line-height: 25pt;
 	font-family: sans-serif;
-	font-weight: 
+	font-weight: 100;
 }
 
 section {
