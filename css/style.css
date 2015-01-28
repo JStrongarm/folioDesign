@@ -67,6 +67,7 @@ ul a:hover {
   font-size: 40pt;
   font-weight: 900;
   text-shadow: 2px 2px 2px rgba(0,0,05, 0.5);
+  line-height: 50px;
 }
 .landing h2{
   text-align: center;
@@ -101,32 +102,43 @@ ul a:hover {
 	background: #C44741;
 }
 
-#two {
+.two {
+  background: #303233;
+}
+
+#imageTwo {
 	background: url("https://ununsplash.imgix.net/photo-1417434743061-9873e0beaed6?q=75&fm=jpg&s=64c1a89ef425b466f96c20b51a36398e");
-	height: 50%;
-	width: 100%;
-	background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	text-align: center;
-  	font-family: sans-serif;
-  	font-weight: 100;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#imageThree {
+  background: url("https://ununsplash.imgix.net/photo-1417007594043-344e0104c3ce?q=75&fm=jpg&s=4c279d476e8c66b3c1dcf3e8dcccd3d8");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .three {
-	background: #2C343B;
+	background: #F2AE72;
 }
 
 .main {
 	width: 100%;
 	position: relative;
-  background: #C44741;
 }
 
 .main-container {
 	position: relative;
 	z-index: 1;
+}
+
+.main-container2 {
+  position: relative;
+  z-index: 1;
 }
 
 /*SLANTED DIVS*/
@@ -164,35 +176,35 @@ ul a:hover {
 
 /*== SLANTED TWO ==*/
 
-.mainContainerTwo:before {
+.main-container2:before {
   content: '';
   position: absolute;
   left: 0;
   top: -50px;
   width: 100%;
   height: 90px;
-  background: #2C343B;
+  background: #303233;
   -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
   -o-transform: skewY(-2deg);
   transform: skewY(-2deg);
-  z-index: 0;
+  z-index: -1;
 }
 
-.mainContainerTwo:after {
+.main-container2:after {
   content: '';
-  position: relative;
-  top: 550px;
+  position: absolute;
+  bottom: -50px;
   width: 100%;
   height: 90px;
-  background: #2C343B;
+  background: #303233;
   -webkit-transform: skewY(2deg);
   -moz-transform: skewY(2deg);
   -ms-transform: skewY(2deg);
   -o-transform: skewY(2deg);
   transform: skewY(2deg);
-  z-index: 0;
+  z-index: -1;
 }
 
 .mainContent {
@@ -218,11 +230,19 @@ ul a:hover {
 section {
 	height: 50%;
 	width: 100%;
-	background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	text-align: center;
-  	font-family: sans-serif;
-  	font-weight: 100;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
 }
+
+/*IMAGE GALLERY*/
+
+.imageFolio {
+  width: 100%;
+}
+
+#folio {
+  width: 33%;
+}
+
+/*FOOTER*/
