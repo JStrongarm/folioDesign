@@ -246,3 +246,29 @@ section {
 }
 
 /*FOOTER*/
+
+/*FOOTER*/
+.main-Footer {
+  max-width: 900px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.main-Footer:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: green;
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  z-index: -1;
+}
