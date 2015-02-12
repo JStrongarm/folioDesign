@@ -246,10 +246,7 @@ section {
 }
 
 /*FOOTER*/
-
-/*FOOTER*/
 .main-Footer {
-  max-width: 900px;
   height: 350px;
   margin: 0 auto;
   padding: 20px;
@@ -261,7 +258,7 @@ section {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: -50px;
   width: 100%;
   height: 90px;
   background: green;
@@ -270,5 +267,6 @@ section {
   -ms-transform: skewY(2deg);
   -o-transform: skewY(2deg);
   transform: skewY(2deg);
-  z-index: -1;
+  z-index: 0;
 }
+/*FOOTER*/
