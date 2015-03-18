@@ -47,13 +47,8 @@ ul a:hover {
 
 .landing {
 	height: 100%;
-	width: 100%;
-	background: url("https://ununsplash.imgix.net/uploads/1413259835094dcdeb9d3/6e609595?fit=crop&fm=jpg&h=700&q=75&w=1050");
-	background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: white;
+    width: 100%;
+    color: white;
 }
 
 .landing h1,h2,.cta {
@@ -88,6 +83,11 @@ ul a:hover {
   position: relative;
 }
 
+.cta a {
+    text-decoration: none;
+    color: white;
+}
+
 .cta:hover{
   transform:scale(1.05,1.05);
   transform-origin: 25% 25% inital;
@@ -111,11 +111,12 @@ ul a:hover {
   width: 100%;
   height: 90px;
   background: inherit;
-  -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
+  -webkit-transform: skewY(2deg);
+  -moz-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  -o-transform: skewY(2deg);
+  transform: skewY(2deg);
+  z-index: 0;
 }
 
 .slantOne::after {
@@ -153,14 +154,16 @@ ul a:hover {
 	line-height: 25pt;
 	font-family: sans-serif;
 	font-weight: 100;
+    z-index: 2;
 }
 
 section {
-	height: 50%;
-	width: 100%;
+  height: 50%;
+  width: 100%;
   text-align: center;
   font-family: sans-serif;
   font-weight: 100;
+  z-index: -1
 }
 
 /*COLOUR DECLARATIONS*/
@@ -173,10 +176,18 @@ section {
   background: #303233;
 }
 
-
 /*IMAGE DECLARATIONS*/
+#imageOne {
+  background: url("../img/bg_1.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
 #imageTwo {
-  background: url("https://ununsplash.imgix.net/photo-1417434743061-9873e0beaed6?q=75&fm=jpg&s=64c1a89ef425b466f96c20b51a36398e");
+  background: url("../img/bg_2.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -184,7 +195,7 @@ section {
 }
 
 #imageThree {
-  background: url("https://ununsplash.imgix.net/photo-1417007594043-344e0104c3ce?q=75&fm=jpg&s=4c279d476e8c66b3c1dcf3e8dcccd3d8");
+  background: url("../img/bg_3.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
