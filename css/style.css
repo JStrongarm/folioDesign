@@ -315,6 +315,24 @@ input[type="email"] {
   background-size: cover;
 }
 
+#input-5 {
+	background: white;
+	color: #20242B;
+	margin-top: 40px;
+	border: none;
+	transition: all 0.5s;
+}
+
+#input-5:hover {
+	background: #F23C55;
+	color: white;
+	margin-top: 40px;
+	border: none;
+	transition: all 0.5s;
+}
+
+
+
 /*-------------MEDIA QUERIES-------------*/
 
 @media(max-width: 480px) {
