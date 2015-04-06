@@ -8,7 +8,17 @@
 	<script src="js/smooth-scroll.js"></script>
 </head>
 <body>
-	<nav>
+
+	<div class="modal" id="modal-1"></div>
+	<div class="modal" id="modal-2"></div>
+	<div class="modal" id="modal-3"></div>
+	<div class="modal" id="modal-4"></div>
+	<div class="modal" id="modal-5"></div>
+	<div class="modal" id="modal-6"></div>
+	<div class="modal" id="modal-7"></div>
+	<div class="modal" id="modal-8"></div>
+
+	<nav id="navigation">
 		<div class="navContainer" id="home">
 			<img src="img/logo.png" width="100px" height="35px"/>
 			<ul>
@@ -19,7 +29,6 @@
 			</ul>
 		</div>
 	</nav>
-
 	<section class="landing" id="imageOne">
 		<h1>JOSHUA ARMSTRONG</h1>
 		<h2>DIGITAL DESIGNER/FRONT END DEVELOPER</h2>
@@ -29,8 +38,8 @@
   	<div class="main slantOne charcoal" id="about">
   	    <div class="mainContent">
         	<h1>What do I do?</h1>
-        	<p>I build beautiful, handcrafted websites. Everybody's story is unique, and your website is no different. Each project I undertake is analysed meticulously to get you the most effective result to maximise your exposure and give your customers a unique, memorable experience.</p>
-			<p>Having a passion for digital from an early age, I taught myself whatever I could get my hands on; Websites, animation, mobile applications, digital-illustration... Having reinforced my skills at Swinburne, I freelanced here in Melbourne, as well as across Canada and I am currently working at one of Australia's most effective agencies, AJF Partnership. Please check out my <a href="">portfolio</a> below.</p>
+        	<p>I build beautiful, handcrafted websites. Everybody's story is unique. Your website should tell that story. I’m in the business of creating memorable digital experiences for your customers. I work closely with you to understand your purpose, product, hopes and aspirations, and tailor a digital offering that embodies your brand’s personality and generates an effective return on your investment.</p>
+			<p>Having a passion for digital from an early age, I taught myself whatever I could get my hands on; Websites, animation, mobile applications, digital-illustration... Having reinforced my skills at Swinburne, I freelanced here in Melbourne, as well as across Canada and I am currently working at one of Australia's most effective agencies, AJF Partnership. Please check out my <a data-scroll href="#portfolio">portfolio</a> below.</p>
         </div>
 	</div>
 
@@ -38,13 +47,13 @@
 
 	<div class="main slantOne charcoal" id="portfolio">
 		<div class="mainContent">
-			<div class="folioGrid">
-				<img src="img/cssAnim.jpg"/>
-				<img src="img/bucketlist.png"/>
-				<img src="img/xds.jpg"/>
-				<img src="img/lifespan.jpg"/>
-				<img src="img/deer.jpg"/>
-				<img src="img/hotaf.jpg"/>
+			<div class="folioGrid" id="folio">
+				<img src="img/cssAnim.jpg" data-num="1"/>
+				<img src="img/bucketlist.png" data-num="2"/>
+				<img src="img/xds.jpg" data-num="3"/>
+				<img src="img/lifespan.jpg" data-num="4"/>
+				<img src="img/deer.jpg" data-num="5"/>
+				<img src="img/hotaf.jpg" data-num="6"/>
 			</div>
 			<h2>clients I've worked with</h2>
 			<div class="clientGrid">
@@ -63,16 +72,16 @@
 	<div class="main slantOne charcoal" id="contact">
 		<div class="mainContent">
 			<h1>Go ahead, contact me</h1>
-			<form>
-				<input class="input-1" type="text" id="input-1">
-				<label class="" data-content="First Name"><span class="input__label-content input__label-content--isao">First Name</span></label>
-				<input class="" type="text" id="input-2"/>
-				<label class="" data-content="Last Name"><span class="input__label-content input__label-content--isao">Last Name</span></label>
-				<input class="" type="text" id="input-3"/>
-				<label class="" data-content="Email Address"><span class="input__label-content input__label-content--isao">Email Address</span></label>
-				<input class="" type="textbox" id="input-4"/>
-				<label class="" data-content="Extra"><span class="input__label-content input__label-content--isao">Tell about your project</span></label>
-				<input class="" type="submit" id="input-5"/>
+			<form id="contact">
+				<input type="text" id="firstName">
+				<label id="firstName-label">First Name</label>
+				<input type="text" id="lastName"/>
+				<label id="lastName-label">Last Name</label>
+				<input type="text" id="email"/>
+				<label id="email-label">Email Address</label>
+				<input type="textbox" id="comments"/>
+				<label id="comments-label">Tell about your project</label>
+				<input type="submit" id="submit"/>
 			</form>
 		</div>
 	</div>
@@ -83,14 +92,13 @@
     	updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
     	offset: 60, // Integer. How far to offset the scrolling anchor location in pixels
 	});
-
   	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   	ga('create', 'UA-42405889-3', 'auto');
   	ga('send', 'pageview');
 </script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
