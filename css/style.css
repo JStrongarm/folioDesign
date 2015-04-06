@@ -273,11 +273,16 @@ input:focus {
 }
 
 .inputSuccess {
-	border-bottom: 5px solid red;
+	border-bottom: 5px solid #5EF243;
 	transition: color,border 0.5s;
 	-webkit-transition: color,border 0.5s;
 }
 
+.inputFailure {
+	border-bottom: 5px solid #DC4633;
+	transition: color,border 0.5s;
+	-webkit-transition: color,border 0.5s;
+}
 
 label {
 	width: 100%;
