@@ -1,16 +1,18 @@
 var navbg = document.getElementById("navigation");
 var modal = document.getElementById("modal");
 var contact = document.getElementById("contact");
-	// input elements
-	var firstName = document.getElementById("firstName");
-	var lastName = document.getElementById("lastName");
-	var email = document.getElementById("email");
-	var comments = document.getElementById("comments");
-	// Input labels
-	var firstName_label = document.getElementById("firstName-label");
-	var lastName_label = document.getElementById("lastName-label");
-	var email_label = document.getElementById("email-label");
-	var comments_label = document.getElementById("comments-label");
+
+// input elements
+var firstName = document.getElementById("firstName");
+var lastName = document.getElementById("lastName");
+var email = document.getElementById("email");
+var comments = document.getElementById("comments");
+
+// Input labels
+var firstName_label = document.getElementById("firstName-label");
+var lastName_label = document.getElementById("lastName-label");
+var email_label = document.getElementById("email-label");
+var comments_label = document.getElementById("comments-label");
 
 // TOP NAVIGATION FUNCTION
 window.addEventListener("scroll", navChange);
@@ -24,26 +26,18 @@ function navChange(){
 }
 
 // CONTACT FORM VALIDATION
-firstName.addEventListener("keyup", formValid);
-lastName.addEventListener("keyup", formValid);
-comments.addEventListener("keyup", formValid);
-email.addEventListener("keyup", emailValid);
+firstName.addEventListener("blur", formValid);
+lastName.addEventListener("blur", formValid);
+email.addEventListener("blur", formValid);
+comments.addEventListener("blur", formValid);
 
 function formValid(){
-	if(this.value == true){
-		this.className = "inputFailure";
-		this.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-	}else if(this.value == false){
+	if(this.value == null || this.value == ""){
+		this.className = "";
 		this.className = "inputSuccess";
-		this.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
-	}
-}
-
-function emailValid(){
-	if(this.value.indexOf("@") == -1){
+	}else{
+		this.className = "";
 		this.className = "inputFailure";
-		this.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+		console.log("shiiiiiiiiiiit");
 	}
 }
-
-

@@ -34,10 +34,11 @@ nav {
 	text-align: center;
 	display: inline;
 	float: right;
+	margin-top: 5px;
 }
 
 .navContainer ul li {
-	margin: 0 10px 0 10px;
+	margin-left: 20px;
 }
 
 ul a {
@@ -122,21 +123,21 @@ ul a:hover {
 }
 /*START SLANTED #1*/
 .slantOne::before {
-  	content: '';
-  	position: absolute;
-  	top: -60px;
-  	border-style: inset;
+  content: '';
+  position: absolute;
+  top: -60px;
+  border-style: inset;
 	border-top: 60px double rgba(255,255,255,0);
 	border-bottom: 60px solid #20242B;
-	border-left: 49.5vw solid #20242B;
-	border-right: 49.5vw solid #20242B;
+	border-left: 50vw solid #20242B;
+	border-right: 50vw solid #20242B;
 	-moz-transform: scale(.9999);
 	transform: scale(.9999);
 }
 
 /*END SLANTED #1*/
 .mainContent {
-	max-width: 900px;
+	max-width: 960px;
 	margin: 0 auto;
 	padding: 20px;
 	color: #FFFFFF;
@@ -247,7 +248,7 @@ section {
 #contact {
 	padding-bottom: 90px;
 }
-  
+
 form {
 	width: 60%;
 	margin: 0 auto;
@@ -339,7 +340,7 @@ input[type="email"] {
 	background: white;
 	color: #20242B;
 	margin-top: 40px;
-	border: none;
+	border: 1px solid rgba(0,0,0,0);
 	transition: all 0.5s;
 }
 
@@ -347,7 +348,6 @@ input[type="email"] {
 	background: #F23C55;
 	color: white;
 	margin-top: 40px;
-	border: none;
 	transition: all 0.5s;
 }
 
@@ -369,4 +369,3 @@ form {
 	width: 90%;
 }
 }
-
