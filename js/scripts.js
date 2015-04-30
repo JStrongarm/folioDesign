@@ -42,10 +42,7 @@ function formValid(){
 	}
 }
 
-function emailValid(){ 
-	
-		console.log('@meeee',this.value.indexOf("@"));
-	
+function emailValid(){
 	if(this.value == null || this.value == "" || this.value.indexOf("@") == -1){
 		this.className = "";
 		this.className = "inputFailure";
