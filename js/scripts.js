@@ -28,16 +28,31 @@ function navChange(){
 // CONTACT FORM VALIDATION
 firstName.addEventListener("blur", formValid);
 lastName.addEventListener("blur", formValid);
-email.addEventListener("blur", formValid);
+email.addEventListener("blur", emailValid);
 comments.addEventListener("blur", formValid);
 
 function formValid(){
 	if(this.value == null || this.value == ""){
 		this.className = "";
-		this.className = "inputSuccess";
-	}else{
-		this.className = "";
 		this.className = "inputFailure";
 		console.log("shiiiiiiiiiiit");
+	}else{
+		this.className = "";
+		this.className = "inputSuccess";
+	}
+}
+
+function emailValid(){ 
+	
+		console.log('@meeee',this.value.indexOf("@"));
+	
+	if(this.value == null || this.value == "" || this.value.indexOf("@") == -1){
+		this.className = "";
+		this.className = "inputFailure";
+		console.log('fail',this.value);
+	}else{
+		this.className = "";
+		this.className = "inputSuccess";
+		console.log('pass',this.value);
 	}
 }

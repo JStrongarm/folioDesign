@@ -125,6 +125,7 @@ ul a:hover {
 .slantOne::before {
   content: '';
   position: absolute;
+  max-width: 100%;
   top: -60px;
   border-style: inset;
 	border-top: 60px double rgba(255,255,255,0);
@@ -168,16 +169,16 @@ ul a:hover {
 }
 
 .mainContent > p {
-	line-height: 25pt;
+	line-height: 20pt;
 	letter-spacing: 0.75pt;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 500;
+	font-weight: 100;
 	margin-bottom: 20px;
 	text-align: left;
 }
 
 .mainContent > h1:first-child{
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .mainContent > p:last-child{
